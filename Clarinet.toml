@@ -1,0 +1,39 @@
+[project]
+name = 'hello-world'
+description = ''
+authors = []
+telemetry = false
+cache_dir = './.cache'
+requirements = []
+[contracts.counter]
+path = 'contracts/counter.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.hello]
+path = 'contracts/hello.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.hello2]
+path = 'contracts/hello2.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.map]
+path = 'contracts/map.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.simple_borrow]
+path = 'contracts/simple_borrow.clar'
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
